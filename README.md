@@ -1,6 +1,28 @@
-# Getting Started with Create React App
+# Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Write a SPA with React.js or Vue.js that:
+
+-   use the BackendService to get the metrics from the "server" (use "challengeApiKey" as the apiKey ).
+-   on one page allows the user to view, add, edit and delete the metrics.
+-   on another page show the user the metrics as you prefer.
+-   create a git repository and share it with us (the first commit should be the framework instantiation ex. npm create-react-app).
+    Structure the code as you would do for a production application, expecting in the future that the BackendService will provide new kind of Metric class.
+
+2. Implement a component library based on the design system the ux team provided -> https://docs.google.com/document/d/1MN_Rhq61utdkPYxEEhLhKiJIALck2nlX112jMfCtg9I/edit#
+   Make sure it is:
+
+-   structured
+-   reusable
+-   expandable
+-   testable (bonus points)
+
+We will evaluate based on:
+
+-   how you structure your code
+-   how you structure your css
+-   UX design sensibility
+-   meaningful tests (bonus points).
+-   emphasis on expandability and maintainability
 
 ## Available Scripts
 
@@ -38,33 +60,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
