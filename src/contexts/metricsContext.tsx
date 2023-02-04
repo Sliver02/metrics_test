@@ -44,13 +44,13 @@ const startMetrics = [
 
 // global metrics provider
 export const MetricsProvider = ({
-    key,
+    api,
     children,
 }: {
-    key: string;
+    api: string;
     children: ReactNode | ReactNode[];
 }) => {
-    const [apiKey] = useState<string>(key);
+    const [apiKey] = useState<string>(api);
     const [metrics, setMetrics] = useState<IMetric[]>(startMetrics);
 
     const getMetrics = async () => {

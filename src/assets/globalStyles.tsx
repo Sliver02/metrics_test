@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import media from './mediaQueries';
 import { fontSize, palette } from './variables';
+import Icon from '@mdi/react';
 
 export const GlobalStyles = createGlobalStyle`
     // global reset
@@ -104,3 +105,5 @@ export const Header = styled.h1<{ type: string }>`
     line-height: 0.8;
     margin-bottom: ${(props) => getFontSize(props.type) / 2}rem;
 `;
+
+export const StyledIcon = styled(Icon)``;
