@@ -20,4 +20,8 @@ const Button = ({ label, onClick, link, disabled, small }: IButton) => {
     );
 };
 
+Button.defaultProps = {
+    label: 'Button label',
+};
+
 export default Button;

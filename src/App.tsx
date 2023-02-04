@@ -1,25 +1,36 @@
-import './App.css';
+import { Box, Header } from 'assets/globalStyles';
+import Button from './components/atoms/Button';
 import { MetricsProvider } from './contexts/metricsContext';
-import logo from './logo.svg';
 
 const App = () => {
     return (
         <MetricsProvider key="challengeApiKey">
             <div className="App">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <p>
-                        Edit <code>src/App.js</code> and save to reload.
-                    </p>
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                    </a>
-                </header>
+                <header className="App-header"></header>
+                <body>
+                    <Header as="h1" type="large">
+                        Component library
+                    </Header>
+                    <Box>
+                        <Header as="h2" type="medium">
+                            Button component
+                        </Header>
+                        <Button />
+                        <Button disabled />
+                        <Button small />
+                        <Button small disabled />
+                    </Box>
+
+                    <Box>
+                        <Header as="h2" type="medium">
+                            Checkbox component
+                        </Header>
+                        <Button />
+                        <Button disabled />
+                        <Button small />
+                        <Button small disabled />
+                    </Box>
+                </body>
             </div>
         </MetricsProvider>
     );
