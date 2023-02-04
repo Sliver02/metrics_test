@@ -1,11 +1,9 @@
 import { mdiCheck } from '@mdi/js';
 import { StyledIcon } from 'assets/globalStyles';
 import { ICheckbox } from './interfaces';
-import { FakeInput, Input, StyledCheckbox } from './styled';
+import { FakeInput, StyledCheckbox } from './styled';
 import { useRef, useState } from 'react';
 
-// initiate Checkbox as complex component rather than directly styled for scalability
-// might be needed for specific functionalities tied to analytics or url manipulation
 const Checkbox = ({ label, checked, disabled, value, name, onChange }: ICheckbox) => {
     const [inputChecked, setInputChecked] = useState(checked);
 
@@ -20,7 +18,7 @@ const Checkbox = ({ label, checked, disabled, value, name, onChange }: ICheckbox
 
     return (
         <StyledCheckbox ref={inputRef} checked={inputChecked} onClick={handleClick} {...modifiers}>
-            <Input value={value} name={name} onChange={onChange} checked={!!inputChecked} />
+            <input value={value} name={name} onChange={onChange} checked={!!inputChecked} />
             <FakeInput>{!!inputChecked && <StyledIcon path={mdiCheck} />}</FakeInput>
             {label}
         </StyledCheckbox>

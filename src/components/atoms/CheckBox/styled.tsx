@@ -4,10 +4,6 @@ import { ICheckboxModifiers } from './interfaces';
 import { StyledIcon } from 'assets/globalStyles';
 import { rgba } from 'polished';
 
-export const Input = styled.input.attrs<{ checked: boolean }>({
-    type: 'checkbox',
-})``;
-
 export const FakeInput = styled.div``;
 
 const checked = css`
@@ -20,11 +16,11 @@ const checked = css`
 
 const disabled = css`
     cursor: default;
-    color: ${rgba(palette.primary, 0.5)};
+    color: ${palette.secondary};
     pointer-events: none;
 
     ${FakeInput} {
-        border: 1px solid ${rgba(palette.primary, 0.5)};
+        border: 1px solid ${palette.secondary};
     }
 `;
 
@@ -36,7 +32,7 @@ export const StyledCheckbox = styled.div<ICheckboxModifiers>`
 
     margin: 0.2rem 0;
 
-    ${Input} {
+    input {
         display: none;
     }
 
