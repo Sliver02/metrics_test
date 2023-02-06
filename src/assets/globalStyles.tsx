@@ -80,8 +80,8 @@ export const GlobalStyles = createGlobalStyle`
 export const Box = styled.div`
     display: flex;
     flex-direction: column;
-    width: 30rem;
-    margin: 2rem;
+    max-width: 30rem;
+    margin: 2rem 0;
     padding: 2rem;
     border: 1px dashed ${palette.primary};
     background: ${palette.foreground};
