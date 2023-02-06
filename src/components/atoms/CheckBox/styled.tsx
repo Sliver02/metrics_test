@@ -9,8 +9,11 @@ export const FakeInput = styled.div``;
 const checked = css`
     ${FakeInput} {
         background: ${palette.success};
-        color: ${palette.foreground};
         border: 1px solid ${palette.success};
+
+        ${StyledIcon} {
+            opacity: 1;
+        }
     }
 `;
 
@@ -27,6 +30,7 @@ const disabled = css`
 export const StyledCheckbox = styled.div<ICheckboxModifiers>`
     cursor: pointer;
     display: flex;
+    width: fit-content;
     -ms-user-select: none;
     user-select: none;
 
@@ -46,11 +50,14 @@ export const StyledCheckbox = styled.div<ICheckboxModifiers>`
 
         border: 1px solid ${palette.primary};
 
-        transition: 0.2s scale, 0.2s border, 0.2s background;
+        transition: 0.1s scale, 0.1s border, 0.1s background;
 
         ${StyledIcon} {
+            color: ${palette.foreground};
             position: absolute;
             width: 100%;
+            opacity: 0;
+            transition: 0.1s opacity;
         }
     }
 

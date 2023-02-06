@@ -1,6 +1,7 @@
 import { Box, Header } from 'assets/globalStyles';
 import Checkbox from 'components/atoms/CheckBox';
 import Input from 'components/atoms/Input';
+import Tooltip from 'components/atoms/Tooltip';
 import Button from './components/atoms/Button';
 import { MetricsProvider } from './contexts/metricsContext';
 
@@ -36,6 +37,16 @@ const App = () => {
                     </Header>
                     <Input />
                     <Input description="This is the input description" disabled />
+                </Box>
+
+                <Box>
+                    <Header as="h2" type="medium">
+                        Tooltip component
+                    </Header>
+                    <Tooltip />
+                    <Tooltip disabled />
+                    <Tooltip small />
+                    <Tooltip small disabled />
                 </Box>
             </div>
         </MetricsProvider>

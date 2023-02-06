@@ -17,7 +17,7 @@ export const fontSize = {
     xl: 0.8328995314940135,
 };
 
-const light = {
+export const light = {
     primary: '#191238',
     secondary: '#777188',
     disabled: '#f5f6f5',
@@ -25,6 +25,10 @@ const light = {
     error: '#EF3E36',
     foreground: '#fff',
     background: '#f1f2f3',
+};
+
+export const zIndex = {
+    tooltip: 10,
 };
 
 export const palette = light;

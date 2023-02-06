@@ -17,9 +17,11 @@ const Checkbox = ({ label, checked, disabled, value, name, onChange }: ICheckbox
     };
 
     return (
-        <StyledCheckbox ref={inputRef} checked={inputChecked} onClick={handleClick} {...modifiers}>
+        <StyledCheckbox checked={inputChecked} onClick={handleClick} {...modifiers}>
             <input value={value} name={name} onChange={onChange} checked={!!inputChecked} />
-            <FakeInput>{!!inputChecked && <StyledIcon path={mdiCheck} />}</FakeInput>
+            <FakeInput ref={inputRef}>
+                <StyledIcon path={mdiCheck} />
+            </FakeInput>
             {label}
         </StyledCheckbox>
     );
