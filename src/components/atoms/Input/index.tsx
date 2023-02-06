@@ -1,8 +1,6 @@
-import { mdiCheck } from '@mdi/js';
-import { StyledIcon } from 'assets/globalStyles';
 import { IInput } from './interfaces';
 import { Descrtiption, InputContainer, StyledInput } from './styled';
-import { useRef, useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const Input = ({
     label,

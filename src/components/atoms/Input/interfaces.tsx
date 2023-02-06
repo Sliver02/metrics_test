@@ -6,7 +6,6 @@ export interface IInputModifiers {
 export interface IInput extends IInputModifiers {
     type?: 'text' | 'password' | 'number' | 'date';
     name?: string;
-    icon?: string;
     label?: string;
     description?: string;
     startValue?: string;
