@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 import { palette, zIndex } from 'assets/variables';
 import { ITooltipModifiers } from './interfaces';
-import { rgba } from 'polished';
 import { StyledIcon } from 'assets/globalStyles';
 
 export const Dialog = styled.div``;

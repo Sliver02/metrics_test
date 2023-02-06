@@ -1,4 +1,4 @@
-import { Box, Header } from 'assets/globalStyles';
+import { Box, Title } from 'assets/globalStyles';
 import Button from 'components/atoms/Button';
 import Checkbox from 'components/atoms/CheckBox';
 import Input from 'components/atoms/Input';
@@ -7,13 +7,13 @@ import Tooltip from 'components/atoms/Tooltip';
 const DesignSystem = () => {
     return (
         <>
-            <Header as="h1" type="large">
+            <Title as="h1" type="large">
                 Design system
-            </Header>
+            </Title>
             <Box>
-                <Header as="h2" type="medium">
+                <Title as="h2" type="medium">
                     Button component
-                </Header>
+                </Title>
                 <Button />
                 <Button disabled />
                 <Button small />
@@ -21,25 +21,25 @@ const DesignSystem = () => {
             </Box>
 
             <Box>
-                <Header as="h2" type="medium">
+                <Title as="h2" type="medium">
                     Checkbox component
-                </Header>
+                </Title>
                 <Checkbox />
                 <Checkbox disabled />
             </Box>
 
             <Box>
-                <Header as="h2" type="medium">
+                <Title as="h2" type="medium">
                     Input component
-                </Header>
+                </Title>
                 <Input />
                 <Input description="This is the input description" disabled />
             </Box>
 
             <Box>
-                <Header as="h2" type="medium">
+                <Title as="h2" type="medium">
                     Tooltip component
-                </Header>
+                </Title>
                 <Tooltip />
                 <Tooltip disabled />
                 <Tooltip small />

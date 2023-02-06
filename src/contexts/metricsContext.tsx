@@ -1,7 +1,7 @@
 import { createContext, ReactNode, useState } from 'react';
 
 // single metric interface
-interface IMetric {
+export interface IMetric {
     id: string;
     code: string;
     amounts: number[] | null;
@@ -9,8 +9,7 @@ interface IMetric {
 }
 
 // context interface
-interface IMetricsContext {
-    metrics: IMetric[];
+export interface IMetricsContext {
     getMetrics: () => Promise<IMetric[]>;
     getMetric: (id: string) => Promise<IMetric | undefined>;
     addMetric: (newMetric: IMetric) => Promise<boolean>;
@@ -21,7 +20,6 @@ interface IMetricsContext {
 
 // create context with default values
 const MetricsContext = createContext<IMetricsContext>({
-    metrics: [],
     getMetrics: async () => Promise.resolve([]),
     getMetric: async () => Promise.resolve(undefined),
     addMetric: async () => Promise.resolve(false),
@@ -120,7 +118,6 @@ export const MetricsProvider = ({
     return (
         <MetricsContext.Provider
             value={{
-                metrics,
                 getMetrics,
                 getMetric,
                 addMetric,
@@ -133,3 +130,5 @@ export const MetricsProvider = ({
         </MetricsContext.Provider>
     );
 };
+
+export default MetricsContext;

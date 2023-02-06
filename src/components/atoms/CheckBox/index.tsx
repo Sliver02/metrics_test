@@ -27,8 +27,6 @@ const Checkbox = ({ label, checked, disabled, value, name, onChange }: ICheckbox
     );
 };
 
-Checkbox.defaultProps = {
-    label: 'Checkbox label',
-};
+Checkbox.defaultProps = {};
 
 export default Checkbox;

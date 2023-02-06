@@ -100,7 +100,7 @@ const getFontSize = (type: string) => {
     }
 };
 
-export const Header = styled.h1<{ type: string }>`
+export const Title = styled.h1<{ type: string }>`
     font-size: ${(props) => getFontSize(props.type)}rem;
     line-height: 0.8;
     margin-bottom: ${(props) => getFontSize(props.type) / 2}rem;
